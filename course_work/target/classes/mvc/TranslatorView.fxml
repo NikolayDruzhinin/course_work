@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="TOP_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="mvc.TranslatorControl">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <Label text="Let's translate something!"/>
+        <Label text="1. To use dictionary follow next semantics: {word}space'-'space{translation}"/>
+        <Label text="2. Translated text will be in the same directory as an inputted text"/>
+        <Button fx:id="loadDictionaryButton" text="Load dictionary" onAction="#loadDict"/>
+        <Button fx:id="loadTextButton" text="Load text" onAction="#loadText"/>
+        <Button fx:id="openTranslatedTextButton" text="Open translated text" onAction="#openText"/>
+
+</VBox>
+
